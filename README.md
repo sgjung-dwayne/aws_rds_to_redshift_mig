@@ -11,7 +11,7 @@
     * 테이블 조회 결과를 S3 내에 업체 별/테이블 별로 CSV 파일 적재
     *  S3로 저장할 시 GZIP 옵션을 사용하여 CSV 파일에 대한 압축 수행
 
-* 각 작업 절차에 대해 Python 스크립트 작성 및 수행
-    * EC2 서버에서 Python 스크립트 수행(CPU : 8core, Mem : 32G, 이관 대상 건수 : 약 26억건)
-    * MySQL → S3 CSV 파일 적재 : 약 53시간 소요
-    * S3 → Redshift Bulk Insert : 약 57시간 소요
+
+> EC2 서버에서 Python 스크립트 수행(CPU : 8core, Mem : 32G, 이관 대상 건수 : 약 26억건)
+> MySQL → S3 CSV 파일 적재 : 약 53시간 소요
+> S3 → Redshift Bulk Insert : 약 57시간 소요
