@@ -13,5 +13,7 @@
 
 
 > EC2 서버에서 Python 스크립트 수행(CPU : 8core, Mem : 32G, 이관 대상 건수 : 약 26억건)
+
 > MySQL → S3 CSV 파일 적재 : 약 53시간 소요
+
 > S3 → Redshift Bulk Insert : 약 57시간 소요
