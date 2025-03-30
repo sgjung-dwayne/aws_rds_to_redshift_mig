@@ -23,7 +23,7 @@ for t in range(len(i_table_nm)):
           WHERE  table_schema = '%s'
           AND    table_name = '%s'
     """
-    covert_table_text = 'CREATE TABLE send_log_old.'+ table_nm + ' ( member_id VARCHAR(100) NOT NULL, '
+    covert_table_text = 'CREATE TABLE '+ table_nm + ' ( member_id VARCHAR(100) NOT NULL, '
     column_text = ''
     curs.execute(create_query % table_nm)
     result = curs.fetchall()
